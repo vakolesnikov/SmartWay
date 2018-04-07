@@ -2,3 +2,219 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+
+
+
+/*==========================================================
+
+						BASE
+
+===========================================================*/
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-button {
+	display: block;
+	padding: 0 33px;
+	padding-top: 14px;
+	padding-bottom: 11px;
+	background-color: rgba(0,0,0,0);
+	border: solid 1.5px #29292a;
+	border-radius: 3px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	cursor: pointer;
+}
+/*==========================================================
+
+						HEADER
+
+===========================================================*/
+
+.main-header {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+
+/*======================top-header=========================*/
+
+.top-header-container {
+	align-items: center;
+	padding-top: 57px;
+	margin-bottom: 40px;
+	
+}
+
+.main-logo {
+	width: 150px;
+	height: 31px;
+	margin-right: 90px;
+	background-image: url('img/main-logo.png');
+	background-size: 151px auto;
+	background-repeat: no-repeat;
+}
+
+.top-text {
+	width: 190px;
+	margin-right: auto;
+	position: relative;
+}
+
+.top-text::after {
+	content: ""; 
+	display: block;
+	width: 39px;
+	height: 19px;
+	background-image: url('img/logo%201c.png');
+	background-size: 39px auto;
+	position: absolute;
+	right: -44px;
+	top: -4px;
+}
+
+.header-button {
+	margin-left: 26px;
+}
+
+
+
+/*====================main-navigation=======================*/
+.main-navigation {
+	margin-right: auto;
+	margin-bottom: 40px;
+	
+}
+
+.main-navigation-list {
+	display: flex;
+	align-items: flex-end;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-navigation-item {
+	margin-right: 80px;
+	letter-spacing: 1.5px;
+}
+
+.navigation-link-active {
+	position: relative;
+}
+
+.navigation-link-active::after {
+	content: "";
+	display: block;
+	width: 100%;
+	border-top: 2px solid #ef4136;
+	bottom: -5px;
+}
+
+
+.header-phone {
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 29px;
+}
+
+
+/*==========================================================
+
+						MAIN
+
+===========================================================*/
+
+
+/*====================main-banner=========================*/
+
+.main-banner {
+	padding-left: calc(50% - 470px);
+	padding-right: calc(50% - 470px);
+	padding-top: 77px;
+	background-image: url('img/main-banner.jpg');
+	background-size: 1300px auto;
+	height: 422px;
+	color: #fff;
+	
+}
+
+.main-banner-title {
+	font-size: 40px;
+	font-weight: 100;
+	margin-bottom: 36px;
+}
+
+.main-banner-text {
+	margin-bottom: 57px;
+	font-size: 18px;
+  	font-weight: 300;
+	line-height: 35px;
+	
+}
+
+.main-banner-button {
+	color: #fff;
+	border-color: #ef4136
+}
+
+/*=====================features=========================*/
+
+
+
+
+
+
+/*====================statistics=========================*/
+
+
+
+/*======================steps=========================*/
+
+
+
+/*====================features2=========================*/
+
+
+/*=====================offers=========================*/
+
+
+
+/*===================information=========================*/
+
+
+
+/*======================form=========================*/
+
+
+
+
+
+
+
+
+/*==========================================================
+
+						FOOTER
+
+===========================================================*/
+
+
