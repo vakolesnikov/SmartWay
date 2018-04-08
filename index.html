@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Smartway</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -10,13 +11,13 @@
 <body>
 	<header class="main-header container">
 		<div class="flex-container top-header-container">
-			<div class="main-logo">
+			<a href="index.html" class="main-logo">
 				
-			</div>
+			</a>
 			<div class="top-text">
 				Входит в группу компаний
 			</div>
-			<a href="#">
+			<a href="#" class="enter-link">
 				Войти
 			</a>
 			<button type="button" class="main-button header-button">
@@ -25,6 +26,10 @@
 		</div>
 		<div class="flex-container">
 			<nav class="main-navigation">
+				<input type="checkbox" id="mobile-menu">
+				<label class="mobile-menu" for="mobile-menu">
+					
+				</label>
 				<ul class="main-navigation-list">
 					<li class="main-navigation-item">
 						<a href="#" class="main-navigation-link navigation-link-active">
@@ -55,196 +60,241 @@
 	</header>
 	<main>
 		<div class="main-banner">
-			<div class="main-banner-title">
-				Бронируйте деловые поездки онлайн.<br>
-				Быстро, без звонков, по лучшим ценам 
+			<div class="container">
+				<div class="main-banner-title">
+					Бронируйте деловые поездки онлайн.<br>
+					Быстро, без звонков, по лучшим ценам 
+				</div>
+				<div class="main-banner-text">
+					Смартвей помогает компании тратить меньше ресурсов на организацию деловых<br> поездок.
+					Бронируйте билеты и отели, управляйте командировками в одном окне.
+				</div>
+				<button type="button" class="main-button main-banner-button">
+					Попробовать
+				</button>
 			</div>
-			<div class="main-banner-text">
-				Смартвей помогает компании тратить меньше ресурсов на организацию деловых<br> поездок.
-				Бронируйте билеты и отели, управляйте командировками в одном окне.
-			</div>
-			<button type="button" class="main-button main-banner-button">
-				Попробовать
-			</button>
-		</div>
-		<section>
-			<h2>
+		</div>	
+		<section class="features container">
+			<h2 class="main-title">
 				Смартвей заменяет агентство делового туризма
 			</h2>
-			<div>
-				<div>
-					<div>
-						<img src="#" alt="images">
+			<div class="flex-container features-container">
+				<div class="features-element">
+					<div class="features-img">
+						<img src="img/time.png" alt="images" width="49" height="58">
 					</div>
-					<div>
+					<div class="features-text">
 						Оформление билетов,
 						транспорта и отелей
 						за 3 минуты
 					</div>
-					<a href="#">
+					<a href="#" class="features-link">
 						Узнать больше
 					</a>
 				</div>
-				<div>
-					<div>
-						<img src="#" alt="images">
+				<div class="features-element">
+					<div class="features-img">
+						<img src="img/doc.png" alt="images" width="61" height="55">
 					</div>
-					<div>
+					<div class="features-text">
 						Документы и отчеты
 						для бухгалтерии
 						и контроля
 					</div>
-					<a href="#">
+					<a href="#" class="features-link">
 						Узнать больше
 					</a>
 				</div>
-				<div>
-					<div>
-						<img src="#" alt="images">
+				<div class="features-element">
+					<div class="features-img">
+						<img src="img/save.png" alt="images" width="56" height="55">
 					</div>
-					<div>
+					<div class="features-text">
 						Экономия
 						командировочного
 						бюджета
 					</div>
-					<a href="#">
+					<a href="#" class="features-link">
 						Узнать больше
 					</a>
 				</div>
-				<div>
-					<div>
-						<img src="#" alt="images">
+				<div class="features-element">
+					<div class="features-img">
+						<img src="img/forma.png" alt="images" width="55" height="54">
 					</div>
-					<div>
+					<div class="features-text">
 						Удобное
 						согласование 
 						командировок
 					</div>
-					<a href="#">
+					<a href="#" class="features-link">
 						Узнать больше
 					</a>
 				</div>
 			</div>
 		</section>
-		<section>
-			<h2>
-				Онлайн не только на словах
-			</h2>
-			<div>
-				<div>
-					<div>
-						98%
+		<div class="statistics">
+			<section class="container">
+				<h2 class="main-title">
+					Онлайн не только на словах
+				</h2>
+				<div class="flex-container statistics-box">
+					<div class="statistics-element">
+						<div class="statistics-number">
+							98%
+						</div>
+						<div class="statistics-text">
+							броней происходят 
+							без участия 
+							оператора
+						</div>
 					</div>
-					<div>
-						броней происходят 
-						без участия 
-						оператора
+					<div class="statistics-element">
+						<div class="statistics-number">
+							973
+						</div>
+						<div class="statistics-text">
+							брони в день
+							делают клиенты
+						</div>
 					</div>
+					<div class="statistics-element">
+						<div class="statistics-number">
+							3 <span>минуты</span>
+						</div>
+						<div class="statistics-text">
+							в среднем
+							занимает поиск
+							и бронирование
+						</div>
+					</div>
+
 				</div>
-				<div>
-					<div>
-						973
-					</div>
-					<div>
-						брони в день
-						делают клиенты
-					</div>
-				</div>
-				<div>
-					<div>
-						3 минуты
-					</div>
-					<div>
-						в среднем
-						занимает поиск
-						и бронирование
-					</div>
-				</div>
+			</section>
+		</div>	
+		<div class="steps container">
+			
+			<input type="radio" name="steps" id="steps1" checked>
+			<input type="radio" name="steps" id="steps2">
+			<input type="radio" name="steps" id="steps3">
+			<input type="radio" name="steps" id="steps4">
+			<input type="radio" name="steps" id="steps5">
+			<input type="radio" name="steps" id="steps6">
+			<ul class="steps-list">
 				
-			</div>
-		</section>
-		<div>
-			<ul>
-				<li>
-					<div>
+				<li class="steps-list-element steps1">
+					<label for="steps1" class="steps-element-title">
 						1. Выберите направление и даты
-					</div>
-					<div>
+					</label>
+					<div class="steps-element-text">
 						Смартвей найдет предложения всех 
 						авиакомпаний и ж/д- перевозчиков.
 						Вам останется сравнить и выбрать
 						самое дешевое или удобное.
 					</div>
 				</li>
-				<li>
-					<div>
+				<li class="steps-list-element steps2">
+					<label for="steps2" class="steps-element-title">
 						2. Резервируйте билеты и отели
-					</div>
-					<div>
-						
+					</label>
+					<div class="steps-element-text">
+						Lorem ipsum dolor sit amet, 
+						consectetur adipisici elit, sed 
+						eiusmod tempor	incidunt ut labore
+						et dolore magna aliqua
 					</div>
 				</li>
-				<li>
-					<div>
+				<li class="steps-list-element steps3">
+					<label for="steps3" class="steps-element-title">
 						3. Согласуйте маршрут и бюджет
-					</div>
-					<div>
-						
+					</label>
+					<div class="steps-element-text">
+						Lorem ipsum dolor sit amet, 
+						consectetur adipisici elit, sed 
+						eiusmod tempor	incidunt ut labore
+						et dolore magna aliqua
 					</div>
 				</li>
-				<li>
-					<div>
+				<li class="steps-list-element steps4">
+					<label for="steps4" class="steps-element-title">
 						4. Получите билет или ваучер
-					</div>
-					<div>
-						
-					</div>
-				</li>
-				<li>
-					<div>
-						4. Меняйте бронь в два клика
-					</div>
-					<div>
-						
+					</label>
+					<div class="steps-element-text">
+						Lorem ipsum dolor sit amet, 
+						consectetur adipisici elit, sed 
+						eiusmod tempor	incidunt ut labore
+						et dolore magna aliqua
 					</div>
 				</li>
-				<li>
-					<div>
+				<li class="steps-list-element steps5">
+					<label for="steps5" class="steps-element-title">
+						5. Меняйте бронь в два клика
+					</label>
+					
+					<div class="steps-element-text">
+						Lorem ipsum dolor sit amet, 
+						consectetur adipisici elit, sed 
+						eiusmod tempor	incidunt ut labore
+						et dolore magna aliqua
+					</div>
+				</li>
+				<li class="steps-list-element steps6">
+					<label for="steps6" class="steps-element-title">
 						6. Сохраняйте рейсы и отели
-					</div>
-					<div>
-						
+					</label>
+					<div class="steps-element-text">
+						Lorem ipsum dolor sit amet, 
+						consectetur adipisici elit, sed 
+						eiusmod tempor	incidunt ut labore
+						et dolore magna aliqua
 					</div>
 				</li>
-				
 			</ul>
-			<div>
+			<div class="steps-content-box">
+				<div class="steps-content steps-content1">
+					<img src="img/browser.png" alt="images" width="610">
+				</div>
+				<div class="steps-content steps-content2">
+					<img src="#" alt="images" width="610">
+				</div>
+				<div class="steps-content steps-content3">
+					<img src="#" alt="images" width="610">
+				</div>
+				<div class="steps-content steps-content4">
+					<img src="#" alt="images" width="610">
+				</div>
+				<div class="steps-content steps-content5">
+					<img src="#" alt="images" width="610">
+				</div>
+				<div class="steps-content steps-content6">
+					<img src="#" alt="images" width="610">
+				</div>
 				
 			</div>
 		</div>
-		<div>
-			<div>
-				<div>
-					<img src="#" alt="images">
+		<div class="flex-container features-container container">
+			<div class="features-element features-element_mod">
+				<div class="features-img">
+					<img src="img/bill.png" alt="images" width="75">
 				</div>
-				<div>
+				<div class="features-title">
 					Поездки в любое время
 				</div>
-				<div>
+				<div class="features-text features-text_mod">
 					Бронируйте или изменяйте
 					билеты, отели и трансфер
 					когда вам удобно. Даже
 					ночью и в выходные.
 				</div>
 			</div>
-			<div>
-				<div>
-					<img src="#" alt="images">
+			<div class="features-element features-element_mod">
+				<div class="features-img">
+					<img src="img/24_7.png" alt="images" width="56">
 				</div>
-				<div>
+				<div class="features-title">
 					Онлайн-помощник
 				</div>
-				<div>
+				<div class="features-text features-text_mod">
 					Поможем с нестандартными
 					запросами по размещению
 					на полутора суток, или
@@ -252,28 +302,28 @@
 					Доступен 24/7.
 				</div>
 			</div>
-			<div>
-				<div>
-					<img src="#" alt="images">
+			<div class="features-element features-element_mod">
+				<div class="features-img">
+					<img src="img/card.png" alt="images" width="66">
 				</div>
-				<div>
+				<div class="features-title">
 					Безналичная оплата
 				</div>
-				<div>
+				<div class="features-text features-text_mod">
 					Сотрудники могут сами
 					оформлять свои поездки,
 					в счет, чеки и платежки
 					придут на компанию.
 				</div>
 			</div>
-			<div>
-				<div>
-					<img src="#" alt="images">
+			<div class="features-element features-element_mod">
+				<div class="features-img">
+					<img src="img/talk.png" alt="images" width="58">
 				</div>
-				<div>
+				<div class="features-title">
 					Удобное согласование
 				</div>
-				<div>
+				<div class="features-text features-text_mod">
 					Согласовывайте поездки
 					с сотрудниками как по 
 					почте так и прямо внутри
@@ -281,57 +331,57 @@
 				</div>
 			</div>
 		</div>
-		<section>
-			<h2>
+		<section class="offers">
+			<h2 class="main-title">
 				Лучшие цены без абонентской платы
 			</h2>
-			<div>
+			<div class="offers-text">
 				Смартвей не требует внедрения и подключается бесплатно. Вы не оплачиваете работу
 				раздутого шара операторов и получаете лучшие цены от крупнейших поставщиков.
 			</div>
-			<div>
-				<div>
-					<div>
+			<div class="offers-number-box flex-container">
+				<div class="offers-number-element">
+					<div class="offers-number">
 						340 000
 					</div>
-					<div>
+					<div class="offers-number-text">
 						Отелей по всему миру
 					</div>
 				</div>
-				<div>
-					<div>
+				<div class="offers-number-element">
+					<div class="offers-number">
 						2 000
 					</div>
-					<div>
+					<div class="offers-number-text">
 						авиакомпаний
 					</div>
 				</div>
 				
 			</div>
-			<div>
-				<div>
-					<img src="#" alt="images">
+			<div class="flex-container offers-logo-box">
+				<div class="offers-logo-img">
+					<img src="img/company1.png" alt="images" width="220">
 				</div>
-				<div>
-					<img src="#" alt="images">
+				<div class="offers-logo-img">
+					<img src="img/company2.png" alt="images" width="220">
 				</div>
-				<div>
-					<img src="#" alt="images">
+				<div class="offers-logo-img">
+					<img src="img/company3.png" alt="images" width="220">
 				</div>
-				<div>
-					<img src="#" alt="images">
+				<div class="offers-logo-img">
+					<img src="img/company4.png" alt="images" width="220">
 				</div>
-				<div>
-					<img src="#" alt="images">
+				<div class="offers-logo-img">
+					<img src="img/company5.png" alt="images" width="220">
 				</div>
-				<div>
-					<img src="#" alt="images">
+				<div class="offers-logo-img">
+					<img src="img/company6.png" alt="images" width="220">
 				</div>
 			</div>
-			<div>
+			<div class="offers-text offers-text_mod">
 				Оставьте заявку, мы перезвоним и продемонстрируем, как работает Смартвей
 			</div>
-			<button type="button">
+			<button type="button" class="main-button">
 				Попробовать
 			</button> 
 		</section>
