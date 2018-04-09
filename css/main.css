@@ -22,13 +22,13 @@ a {
 
 ===========================================================*/
 .container {
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .flex-container {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .main-button {
@@ -47,6 +47,7 @@ a {
 
 .main-title {
 	margin: 0;
+    padding: 0 10px;
 	text-align: center;
 	font-size: 40px;
 	font-weight: 300;
@@ -66,6 +67,7 @@ a {
 /*======================top-header=========================*/
 
 .top-header-container {
+    justify-content: space-between;
 	align-items: center;
 	padding-top: 57px;
 	margin-bottom: 40px;
@@ -75,6 +77,7 @@ a {
 .main-logo {
 	display: block;
 	width: 150px;
+	min-width: 150px;
 	height: 31px;
 	margin-right: 90px;
 	background-image: url('img/main-logo.png');
@@ -84,7 +87,8 @@ a {
 }
 
 .top-text {
-	width: 190px;
+	width: 235px;
+	min-width: 235px;
 	margin-right: auto;
 	position: relative;
 }
@@ -97,8 +101,13 @@ a {
 	background-image: url('img/logo%201c.png');
 	background-size: 39px auto;
 	position: absolute;
-	right: -44px;
+	right: 0px;
 	top: -4px;
+}
+
+.enter-link {
+    display: block;
+    padding: 0 33px;
 }
 
 .header-button {
@@ -108,6 +117,10 @@ a {
 
 
 /*====================main-navigation=======================*/
+.nav-container {
+	flex-wrap: wrap;
+}
+
 .main-navigation {
 	margin-right: auto;
 	margin-bottom: 40px;
@@ -124,7 +137,8 @@ a {
 
 .main-navigation-list {
 	display: flex;
-	align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -133,6 +147,7 @@ a {
 .main-navigation-item {
 	margin-right: 80px;
 	letter-spacing: 1.5px;
+	margin-bottom: 20px;
 }
 
 .navigation-link-active {
@@ -152,7 +167,8 @@ a {
 	font-size: 20px;
 	letter-spacing: 1px;
 	line-height: 29px;
-	margin-top: -3px;
+	margin-top: -6px;
+	margin-bottom: 25px;
 }
 
 
@@ -167,13 +183,14 @@ a {
 
 .main-banner {
 	margin-bottom: 70px;
+    padding: 0 20px;
 	padding-top: 77px;
+    padding-bottom: 40px;
 	background-image: url('img/main-banner.jpg');
 	background-size: 1300px auto;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: #363636;
-	height: 422px;
 	color: #fff;
 	
 }
@@ -206,12 +223,15 @@ a {
 
 .features-container {
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-top: 50px;
+    padding: 0 10px;
 	padding-bottom: 99px;
 }
 
 .features-element {
 	width: 160px;
+    margin: 10px;
 	font-size: 15px;
 	font-weight: 400;
 }
@@ -219,7 +239,7 @@ a {
 .features-img {
 	width: 80px;
 	height: 80px;
-	margin-bottom: 39px;
+	margin-bottom: 20px;
 	position: relative;
 }
 
@@ -250,12 +270,14 @@ a {
 }
 
 .statistics-box {
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	margin-top: 60px;
 }
 
 .statistics-element {
 	width: 281px;
+    margin: 10px;
 	padding: 0 60px;
 	padding-top: 25px;
 	padding-bottom: 36px;
@@ -347,11 +369,20 @@ a {
 	display: block;
 }
 
+.steps-content-box {
+    width: auto;
+}
+
 .steps-content {
 	display: none;
 	width: 610px;
 	margin-top: -15px;
 	
+}
+
+.steps-content img {
+    max-width: 100%;
+    height: auto;
 }
 
 #steps1:checked ~ .steps-content-box .steps-content1,
@@ -387,13 +418,16 @@ a {
 }
 
 .offers-text {
-	width: 700px;
+	max-width: 740px;
 	margin: 0 auto;
 	margin-top: 40px;
 	margin-bottom: 50px;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .offers-number-box {
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
@@ -410,6 +444,7 @@ a {
 }
 
 .offers-logo-box {
+	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0 -110px;
 	overflow: hidden;
@@ -419,7 +454,7 @@ a {
 	width: 220px;
 	height: 140px;
 	background-color: #fff;
-	margin: 0 10px;
+	margin: 10px;
 }
 
 .offers-text_mod {
@@ -473,7 +508,7 @@ a {
 @media (max-width:768px) {
 	
 		.container {
-			width: 768px;
+			max-width: 768px;
 			margin: 0 auto;
 			padding: 0 20px;
 		}
@@ -490,7 +525,24 @@ a {
 			margin-right: 50px;
 		}
 
-		/*====================features=======================*/
+        /*====================main-banner=======================*/
+		
+		.main-banner {
+			background-size: 2300px auto;
+		}
+	
+		.main-banner-title {
+			font-size: 30px;
+		}
+	
+		.main-banner-text {
+			font-size: 16px;
+		}
+	
+			
+
+    
+        /*====================features=======================*/
 
 		.features-container {
 			justify-content: space-around;
@@ -515,12 +567,10 @@ a {
 		}
 
 		.steps-content {
-			width: 450px;
+			width: auto;
 		}
 
-		.steps-content img {
-			width: 450px;	
-		}	
+		
 
 		/*====================features2=========================*/
 
@@ -533,9 +583,7 @@ a {
 			font-weight: 300;
 		}
 
-		.features-element_mod {
-			width: 300px;
-		}
+		
 
 		/*=====================offers=========================*/
 
@@ -551,31 +599,13 @@ a {
 
 /*==========================================================
 
-						STYLE for PHONE
+						OTHER STYLE
 
 ===========================================================*/
-
-
-
-
-@media (max-width:320px) {
-	
-		.container {
-			width: 320px;
-			margin: 0 auto;
-			padding: 0 10px;
-		}
-	
-		.main-title {
-			font-size: 30px;
-		}
-	
-		
-
-		/*======================top-header=========================*/
+@media (max-width: 750px) {
 		.top-header-container {
 			display: block;
-			padding-top: 10px;
+			padding-top: 20px;
 		}	
 	
 		.main-logo {
@@ -600,6 +630,131 @@ a {
 		}
 		
 		.enter-link {
+		    display: inline-block;
+			width: 49%;
+			margin: 20px 0;
+			padding-top: 14px;
+			padding-bottom: 11px;
+			text-align: center;
+			border: 2px solid #29292a;
+			border-radius: 3px;
+			
+		}
+		
+		.header-button {
+			display: inline-block;
+			width: 49%;
+			margin: 0;
+		}	
+		
+}
+
+@media (max-width: 610px) {
+		.main-title {
+			font-size: 30px;
+			text-align: center;
+		}
+		
+		.main-navigation-list {
+			display: block;
+			font-size: 18px;
+		}	
+	
+		.features-element_mod {
+			width: 100%;
+		}
+		
+		.features-element_mod {
+			margin-bottom: 0;
+			border-bottom: 1px solid #eee;
+		}
+	
+		
+			
+}
+
+@media (max-width: 480px) {
+		.statistics-element {
+			width: 100%;
+			text-align: center;
+		}
+		
+			
+}
+
+
+
+@media (max-width: 420px) {
+		/*====================features=======================*/
+	
+		.features-container {
+			margin-top: 30px; 
+			padding-bottom: 20px; 
+		}
+		
+	
+		.features .main-title {
+			text-align: center;
+			font-size: 25px;
+		}
+		
+		.features-element {
+			max-width: 360px;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 15px;
+			
+		}
+		.features-img img{
+			top: 5px;	
+		}
+	
+		.features-img{
+			margin-bottom: 0;	
+		}
+	
+		
+		.features-text {
+			max-width: 300px;
+			margin-bottom: 0px;
+		}	
+	
+		.features-title {
+			padding-top: 20px;
+			padding-left: 5px;
+		}
+}
+
+
+
+
+/*==========================================================
+
+						STYLE for PHONE
+
+===========================================================*/
+
+
+
+
+@media (max-width:375px) {
+	
+		.container {
+			max-width: 375px;
+			margin: 0 auto;
+			padding: 0 10px;
+		}
+	
+		.main-title {
+			font-size: 30px;
+		}
+	
+		
+
+		/*======================top-header=========================*/
+		
+		.enter-link {
 		    display: block;
 			width: 100%;
 			margin: 20px 0;
@@ -615,7 +770,6 @@ a {
 			width: 100%;
 			margin: 0;
 		}	
-		
 		
 		/*====================main-navigation=======================*/
 		.main-navigation {
@@ -678,40 +832,7 @@ a {
 		}
 		
 		
-		/*====================features=======================*/
-	
-		.features-container {
-			margin-top: 30px; 
-			padding-bottom: 20px; 
-		}
 		
-	
-		.features .main-title {
-			text-align: center;
-			font-size: 20px;
-		}
-		
-		.features-element {
-			width: 300px;
-			display: flex;
-			flex-wrap: wrap;
-			margin-bottom: 20px;
-			border-bottom: 1px solid #eee;
-			
-		}
-		.features-img img{
-			top: 5px;	
-		}
-	
-		.features-img{
-			margin-bottom: 0;	
-		}
-	
-		
-		.features-text {
-			width: 200px;
-			margin-bottom: 0px;
-		}
 	
 		
 	
@@ -726,17 +847,24 @@ a {
 		}
 	
 		.statistics-element {
-			width: 290px;
+			max-width: 290px;
 			margin: 0;
-			padding: 5px;
+			padding-left: 5px;
+			padding-right: 5px;
 			margin-bottom: 10px;
 			text-align: center;
 			
 		}
 	
-		.statistics {
-			
+		.statistics-number {
+			font-size: 40px;
 		}
+		
+		.statistics-text {
+			font-size: 15px;
+		}
+		
+		
 		
 		/*====================steps=======================*/
 		
@@ -746,10 +874,7 @@ a {
 		
 		/*====================features2=======================*/
 		
-		.features-title {
-			padding-top: 25px;
-			padding-left: 5px;
-		}
+		
 	
 		.features-text_mod {
 			padding-left: 5px;
