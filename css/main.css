@@ -37,8 +37,9 @@ a {
 	padding-top: 14px;
 	padding-bottom: 11px;
 	background-color: rgba(0,0,0,0);
-	border: solid 1.5px #29292a;
+	border: solid 2px rgba(41,41,42, 0.3);
 	border-radius: 3px;
+	outline: none;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 15px;
@@ -108,6 +109,10 @@ a {
 .enter-link {
     display: block;
     padding: 0 33px;
+	padding-top: 14px;
+	padding-bottom: 11px;
+	border: 2px solid rgba(0,0,0,0);
+	border-radius: 3px;
 }
 
 .header-button {
@@ -150,20 +155,17 @@ a {
 	margin-bottom: 20px;
 }
 
-.navigation-link-active {
+.main-navigation-link {
 	position: relative;
-}
-
-.navigation-link-active::after {
-	content: "";
-	display: block;
+	display: inline-block;
+	padding-bottom: 2px;
 	width: 100%;
-	border-top: 2px solid #ef4136;
-	bottom: -5px;
+	border-bottom: 2px solid rgba(0,0,0,0);
+	
 }
-
 
 .header-phone {
+	height: 30px;
 	font-size: 20px;
 	letter-spacing: 1px;
 	line-height: 29px;
@@ -480,6 +482,7 @@ a {
 	background-color: #363636;
 	padding-top: 57px;
 	padding-bottom: 91px;
+	overflow: hidden;
 }
 
 .footer-container {
@@ -506,7 +509,7 @@ a {
 }
 
 .main-address {
-	margin-top: 18px;
+	margin-top: 10px;
 	margin-bottom: 30px;
 	font-style: normal;
 }
@@ -529,6 +532,7 @@ a {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 30px;
 	
 }
 
@@ -542,31 +546,142 @@ a {
 	line-height: 40px;
 	font-size: 12px;
 	color: #f2f3f4;
+	cursor: pointer;
 }
 
 .footer-information-box {
-	justify-content: space-between;
 }
 
 .box-top {
-	padding-top: 10px;
-	margin-bottom: 35px;
+	margin-bottom: 45px;
 }
 
 .footer-information {
 	font-size: 14px;
+	line-height: 35px;
 	color: #bbbbbb;
+	position: relative;
+}
+
+.footer-information::after {
+	content: "";
+	display: block;
+	position: absolute;
 }
 
 .footer-navigation-title {
 	font-size: 14px;
+	line-height: 35px;
     font-weight: 500;
 	color: #f2f3f4;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.footer-information1 {
+	padding-right: 40px;
+	margin-right: 31px;
+}
+
+.footer-information1::after {
+	width: 32px;
+	height: 15px;
+	background-image: url('img/1c_footer.png');
+	background-size: 32px auto;
+	top: 7px;
+	right: 0;
+}
+
+.footer-information2 {
+	padding-right: 30px;
+}
+
+.footer-information2::after {
+	width: 22px;
+	height: 17px;
+	background-image: url('img/Logo%20Sk.png');
+	background-size: 22px auto;
+	top: 7px;
+	right: 0;
+}
+
+.footer-information3 {
+	padding-left: 32px;
+	margin-right: 44px;
+}
+
+.footer-information3::after {
+	width: 23px;
+	height: 27px;
+	background-image: url('img/ssl.png');
+	background-size: 23px auto;
+	top: 7px;
+	left: 0;
+}
+
+.footer-information4 {
+	padding-left: 42px
+}
+
+.footer-information4::after {
+	width: 33px;
+	height: 31px;
+	background-image: url('img/tkp.png');
+	background-size: 33px auto;
+	top: 7px;
+	left: 0;
 }
 
 
+/*==========================================================
+
+						ANIMATION
+
+===========================================================*/
+
+.enter-link:hover {
+	border: 2px solid #ef4136;
+	transition: 0.3s;
+}
 
 
+.steps-element-title:hover,
+.main-logo:hover,
+.main-button:hover {
+	opacity: 0.6;
+	transition-duration: 0.3s;
+}
+
+.features-link:hover{
+	color: #111;
+}
+
+.footer-contact:hover {
+	color: #ef4136;
+	transition-duration: 0.3s;
+}
+
+.inner-navigation-link:hover,
+.footer-navigation-title:hover,
+.features-link:hover,
+.header-phone:hover,
+.main-navigation-link:hover {
+	border-bottom: 2px solid #ef4136;
+	transition-duration: 0.3s;
+}
+
+.footer-contact:active,
+.inner-navigation-link:active,
+.footer-navigation-title:active,
+.steps-element-title:active,
+.features-link:active,
+.main-logo:active,
+.header-phone:active,
+.main-navigation-link:active,
+.enter-link:active,
+.main-button:active {
+	opacity: 0.3;
+}
 
 /*==========================================================
 
