@@ -294,6 +294,8 @@ a {
 
 .steps {
 	border-bottom: 1px solid #ece4e5;
+	margin-bottom: 70px;
+	padding-bottom: 100px;
 }
 
 .steps-list {
@@ -362,7 +364,7 @@ a {
 .steps-content {
 	width: auto;
 	margin-top: -15px;
-	margin-bottom: -50%;
+	margin-bottom: -300px;
 }
 
 .steps-content img {
